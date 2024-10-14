@@ -1,0 +1,37 @@
+/* pages/channel/channel.wxss */
+.aid{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 100rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.mediate{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 100rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.arbitration{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 100rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.lawyer{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 100rpx;
+  background-color: dodgerblue;
+  color: white;
+}

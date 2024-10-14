@@ -1,0 +1,62 @@
+<!--pages/homepage/homepage.wxml-->
+  <!-- <view class="head">
+    <view class="title">智行劳动</view>
+    <button class="identify" bindtap="onIdentify">
+      客服认证
+    </button>
+  </view> -->
+  <view class="newslet">
+    <swiper indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}"> 
+  
+    <swiper-item>
+    <image class="logo"src="https://s2.loli.net/2024/03/08/Wk5D9RoQHUgnXVC.jpg"></image>  
+    </swiper-item>
+      
+    <swiper-item>
+    <image class="logo"src="https://s2.loli.net/2024/03/08/U2smrRpGakEWXOn.jpg"></image>  
+    </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="functions" style="padding-left: 34%; font-size:18px; font-weight:550;">
+    服务板块
+  </view>
+
+  <view class="card-container" style="margin-top:5%;">
+    <view class="card1" bind:tap="onMore1">
+      <view style="font-size:18px; font-weight:550; margin-left:20px; margin-top:5px; color: #18191a;">咨询&争议</view>
+      <image src="/pages/images/line.png" style="height:5px; width:30px; margin-left: 20px;" ></image>
+      <image src="https://s2.loli.net/2024/03/26/BgAyCt89luha1zP.png" style="height: 80px; width: 115px; margin-left: 45px; " mode="aspectFill"></image>
+    </view>
+    <view class="card2" bind:tap="onMore2">
+      <view style="font-size:18px; font-weight:550; margin-left:20px; margin-top:5px; color: #18191a;">风险预警</view>
+      <image src="/pages/images/line.png" style="height:5px; width:30px; margin-left: 20px;" ></image>
+      <image src="https://s2.loli.net/2024/03/26/oHzAPVEai2N3m4r.png" style="height: 70px; width: 85px; margin-left: 70px; padding-bottom: 20px;" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <view class="card-container" style="margin-top:5%;">
+    <view class="card1" bind:tap="onChannels">
+      <view style="font-size:18px; font-weight:550; margin-left:20px; margin-top:5px; color: #18191a;">法律渠道</view>
+      <image src="/pages/images/line.png" style="height:5px; width:30px; margin-left: 20px;" ></image>
+      <image src="https://s2.loli.net/2024/03/26/MjYLt725Bk6EyuO.png" style="height: 78px; width: 103px; margin-left: 50px; " ></image>
+    </view>
+    <view class="card2" bind:tap="onLegalDoc">
+      <view style="font-size:18px; font-weight:550; margin-left:20px; margin-top:5px; color: #18191a;">法律文书</view>
+      <image src="/pages/images/line.png" style="height:5px; width:30px; margin-left: 20px;" ></image>
+      <image src="https://s2.loli.net/2024/03/26/xtHUqAQ8BsIlLNf.png" style="height: 70px; width: 115px; margin-left: 40px; margin-top: 20px;" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <!-- <button class="query" bindtap="onQuery" style="width: 650rpx">
+    劳动法问题咨询
+  </button>
+  <button class="warn" bindtap="onWarn" style="width: 650rpx">
+    风险预警
+  </button>
+  <button class="conflict" bindtap="onConflict" style="width: 650rpx">
+    劳动争议解决
+  </button>
+  <button class="more" bindtap="onMore">
+    查看更多
+  </button> -->

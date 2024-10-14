@@ -1,0 +1,7 @@
+<!--pages/postblog/postblog.wxml-->
+<view class="box-post" style="width: 120rpx;">
+  <button class="post" style="width: 120rpx" bindtap="onPost">发 布</button>
+</view>
+<view class="box">
+  <textarea class="edit-area" placeholder="请编辑您的帖子"></textarea>
+</view>

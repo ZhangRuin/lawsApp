@@ -1,0 +1,55 @@
+/* pages/allfunctions/allfunctions.wxss */
+.query{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.contract{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.conflict{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.forum{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.channel{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}
+.voice{
+  box-shadow: 2rpx 2rpx 5rpx 5rpx gray;
+  font-weight: 400;
+  font-size: large;
+  line-height: 110rpx;
+  height: 150rpx;
+  margin-top: 40rpx;
+  background-color: white;
+}

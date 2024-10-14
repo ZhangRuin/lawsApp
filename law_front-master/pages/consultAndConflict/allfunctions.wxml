@@ -1,0 +1,25 @@
+<!--pages/allfunctions/allfunctions.wxml-->
+
+<!-- <button class="query" bindtap="onQuery" style="width: 650rpx">
+  劳动法问题咨询
+</button>
+<button class="conflict" bindtap="onConflict" style="width: 650rpx">
+  劳动争议解决
+</button> -->
+<view class="enter" bind:tap="onQuery" style="margin-top:10%; display: flex; align-items: center;">
+    <image src="/pages/images/consult.svg" style="height:40px; width:40px; margin-left: 20px;" mode="aspectFill"></image>
+    <view style="font-size:18px; font-weight:550; margin-left:50px; color: #18191a;">劳动法问题咨询</view>
+    <image src="/pages/images/arrow.png" style="height:20px; width:20px; margin-left: 60px;" mode="aspectFill"></image>
+</view>
+
+<view class="enter" bind:tap="onConflict" style="margin-top:5%; display: flex; align-items: center;">
+    <image src="/pages/images/conflict.png" style="height:40px; width:40px; margin-left: 20px;" mode="aspectFill"></image>
+    <view style="font-size:18px; font-weight:550; margin-left:60px; color: #18191a;">劳动争议解决</view>
+    <image src="/pages/images/arrow.png" style="height:20px; width:20px; margin-left: 68px;" mode="aspectFill"></image>
+</view>
+
+<!-- <view class="enter2">
+    <view style="font-size:18px; font-weight:550; margin-left:20px; margin-top:5px; color: #18191a;">法律渠道</view>
+    <image src="/pages/images/line.png" style="height:5px; width:30px; margin-left: 20px;" ></image>
+
+</view> -->

@@ -1,0 +1,22 @@
+<view class="scroll-list">
+  <block wx:for="{{chatList}}" wx:for-index="index" wx:for-item="item" wx:key="item">
+    <view class="{{login.id==item.msgId?'row-self':'row'}}">
+      <view class="{{login.id==item.msgId?'head-self':'head-friend'}}">
+        <image class="{{login.id==item.msgId?'userAvatar':'aiAvatar'}}" mode="aspectFill" src="{{item.avatar}}"></image>
+      </view>
+      <view>
+        <view wx:if="{{login.id!=item.msgId}}" class="nick">{{item.nickname}}</view>
+        <view class="{{login.id==item.msgId?'message msg-self':'message msg-friend'}}">
+          <text user-select="true">{{item.message}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 发送信息 -->
+<view class="footer">
+  <button class="btn" bindtap="clickBtn" style="background-color:{{ buttonColor }}">{{ buttonText }}</button>
+
+
+</view>

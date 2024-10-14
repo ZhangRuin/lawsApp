@@ -1,0 +1,8 @@
+.enter{
+  width: 86%; /* 卡片宽度 */
+  height: 120rpx; /* 卡片高度 */
+  background-color: #ffffff; /* 卡片背景色 */
+  border-radius: 10rpx; /* 圆角 */
+  box-shadow: -4rpx 0rpx 20rpx 8rpx rgba(0.1, 0.1, 0.1, 0.1); /* 阴影效果 */
+  margin-left: 7%;
+}

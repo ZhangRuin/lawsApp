@@ -1,0 +1,13 @@
+<!--pages/channel/channel.wxml-->
+<button class="aid" bindtap="onAid" style="width: 650rpx">
+  找法援
+</button>
+<button class="mediate" bindtap="onMediate" style="width: 650rpx">
+  找调解
+</button>
+<button class="arbitration" bindtap="onArbitration" style="width: 650rpx">
+  要仲裁
+</button>
+<button class="lawyer" bindtap="onLawyer" style="width: 650rpx;">
+  请律师
+</button>

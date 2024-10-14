@@ -1,0 +1,24 @@
+<view wx:for="{{blogs}}">
+  <view class="blog-card" bindtap="onDetail" data-id="{{item.id}}">
+    <view class="head">
+      <image class="avatar" src="{{item.avatar}}"></image>
+      <text class="name">{{item.updater}}</text>
+    </view>
+    <view class="preview">
+      <text class="title">{{item.title}}</text>
+      <view wx:if="{{item.pictures != []}}" class="pics">
+        <view wx:for="{{item.pictures}}">
+          <image wx:if="{{index<3}}" class="pic" src="{{item}}" mode="aspectFill"></image>
+        </view>
+      </view>
+    </view>
+    <view class="buttons">
+      <button class="btn-share" bindtap="onShareBlog"><image class="share" src="/pages/images/share.png"></image></button>
+      <button class="btn-comment" bindtap="onCheckComments"><image class="comment" src="/pages/images/comment.png"></image></button>
+      <button class="btn-like" bindtap="onLike"><image class="like" src="/pages/images/like1.png"></image></button>
+    </view>
+  </view>
+</view>
+<view class="bottom">
+  <button class="edit" style="width: 100%;"bindtap="onEdit">点击创建新帖</button>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/query/query.wxml-->
+<view class="scroll-list">
+  <block wx:for="{{chatList}}" wx:for-index="index" wx:for-item="item" wx:key="item">
+    <view class="{{login.id==item.msgId?'row-self':'row'}}">
+      <view class="{{login.id==item.msgId?'head-self':'head-friend'}}">
+        <image class="{{login.id==item.msgId?'userAvatar':'aiAvatar'}}" mode="aspectFill" src="{{item.avatar}}"></image>
+      </view>
+      <view>
+        <view wx:if="{{login.id!=item.msgId}}" class="nick">{{item.nickname}}</view>
+          <view class="{{login.id==item.msgId?'message msg-self':'message msg-friend'}}">
+            <text user-select="true">{{item.message}}</text>
+          </view>
+        </view>
+      </view>
+  </block>
+</view>
+
+<!-- 发送信息 -->
+<view class="footer">
+  <view class="humanService">
+    <button open-type="contact" bindcontact="handleContact" type="primary" style="position: absolute; top: 0; left: 0; width: 33px; height: 33px; opacity: 0; margin-top: 20rpx;"></button>
+    <image mode="aspectFill" style="height: 33px; width: 33px;" src="../images/humanService.png"></image>
+  </view>
+
+  <view class="input-box">
+    <textarea class="text-area" placeholder-class="placeholder" show-confirm-bar="{{false}}" cursor-spacing="30" maxlength="500" disable-default-padding="{{true}}" confirm-hold="{{true}}" hold-keyboard="{{true}}" auto-height="false" placeholder="请输入问题" bindinput="inputClick" value="{{content}}"></textarea>
+  </view>
+  <view class="send-btn" wx:if="{{content!=''}}">
+    <image bind:tap="sendClick" mode="aspectFill" style="height: 25px; width: 25px;" src="../images/send.png"></image>
+  </view>
+  <view class="send-btn" wx:else>
+    <!-- 这里放上另外一种情况下的内容 -->
+    <image mode="aspectFill" style="height: 25px; width: 25px;" src="../images/unsend.png"></image>
+  </view>
+
+</view>

@@ -1,0 +1,135 @@
+/* pages/query/query.wxss */
+page {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+}
+
+.scroll-list {
+  padding-bottom: 120rpx;
+}
+
+/* 显示时间 */
+.show-date {
+  text-align: center;
+  font-size: 24rpx;
+  padding: 15rpx 0;
+  color: gray;
+}
+
+/* 每行对话样式 */
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+
+/* 提示信息 */
+/* .tips-text {
+  text-align: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: gray;
+} */
+
+.row-self {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+
+  flex-direction: row-reverse;
+}
+
+/* 头像 */
+.head-self {
+  margin-left: 20rpx;
+}
+
+.head-friend {
+  margin-right: 20rpx;
+}
+
+.aiAvatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.userAvatar {
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.nick {
+  color: #989898;
+  font-size: 24rpx;
+  margin-bottom: 15rpx;
+}
+
+/* 消息内容 */
+.message {
+  background-color: white;
+  font-size: 29rpx;
+  padding: 18rpx;
+  display: flex;
+  align-items: center;
+  line-height: 40rpx;
+  max-width: 540rpx;
+  box-shadow: 0rpx 0rpx 20rpx 8rpx rgba(0.1, 0.1, 0.1, 0.1);
+  letter-spacing: 1rpx; /* 调整字间距 */
+}
+
+
+
+.msg-self {
+  border-radius: 15rpx;
+  color: white;
+  background-color: #3c8bf0;
+  margin-bottom: 45rpx;
+}
+
+.msg-friend {
+  border-radius: 15rpx;
+  color: #333333;
+  background-color: white;
+  margin-bottom: 45rpx;
+}
+
+/* 以下为输入框样式 */
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50rpx;
+  padding-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1rpx solid #f1f1f1;
+}
+
+.btn {
+  width: 100rpx;
+  height: 80rpx;
+  font-weight: normal;
+  color: #fff;
+}
+
+
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/**index.wxss**/
+ 

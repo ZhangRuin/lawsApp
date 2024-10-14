@@ -1,0 +1,88 @@
+page {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+}
+.blog-card{
+  background-color: white;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 50rpx;
+  border-radius: 10px;
+}
+.head{
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.name{
+  margin-left: 30rpx;
+}
+.title{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.buttons{
+  display: flex;
+}
+.btn-share{
+  background-color: white;
+}
+.btn-comment{
+  background-color: white;
+}
+.btn-like{
+  background-color: white;
+}
+.share{
+  height: 50rpx;
+  width: 50rpx;
+}
+.comment{
+  height: 50rpx;
+  width: 50rpx;
+}
+.like{
+  height: 50rpx;
+  width: 50rpx;
+}
+.pic{
+  width: 230rpx;
+  height: 230rpx;
+  margin-left: 5rpx;
+}
+.pics{
+  margin-top: 20rpx;
+  margin-left: 5rpx;
+  margin-right: 10rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+.edit{
+  background-color: dodgerblue;
+  color: white;
+  width: 100%;
+}

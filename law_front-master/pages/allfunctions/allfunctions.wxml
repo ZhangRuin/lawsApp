@@ -1,0 +1,19 @@
+<!--pages/allfunctions/allfunctions.wxml-->
+<button class="query" bindtap="onQuery" style="width: 650rpx">
+  劳动法问题咨询
+</button>
+<button class="contract" bindtap="onContract" style="width: 650rpx">
+  劳动合同审核
+</button>
+<button class="conflict" bindtap="onConflict" style="width: 650rpx">
+  劳动争议解决
+</button>
+<button class="forum" bindtap="onForum" style="width: 650rpx">
+  劳动者论坛
+</button>
+<button class="channel" bindtap="onChannel" style="width: 650rpx">
+  法律渠道信息
+</button>
+<button class="voice" bindtap="onVoice" style="width: 650rpx">
+  语音转文字
+</button>

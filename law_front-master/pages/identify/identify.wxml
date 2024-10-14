@@ -1,0 +1,10 @@
+<!--pages/identify/identify.wxml-->
+<view class="code">
+  <view class="hint">
+    请输入密码认证客服身份：
+  </view>
+  <input class="codebox" name="identifyCode" bindinput="getPassword" value="{{password}}" auto-focus="true"></input>
+  <button class="ok" bindtap="onConfirm">
+    确认
+  </button>
+</view>

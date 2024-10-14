@@ -1,0 +1,97 @@
+/* pages/homepage/homepage.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.head{
+  display: flex;
+}
+.title{
+  width: 50%;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  color: dodgerblue;
+}
+.identify{
+  width: 50%;
+  margin-top: 15rpx;
+  text-align: right;
+  background-color: white;
+  color: orange;
+  font-size: smaller;
+  font-weight: 400;
+}
+.newslet swiper{
+  width: 100%;
+  height: 450rpx;
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.logo{
+  height: 100%;
+  width: 100%;
+}
+
+.functions{
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+}
+.query{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 40rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.warn{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 40rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.conflict{
+  font-weight: 400;
+  font-size: large;
+  line-height: 80rpx;
+  height: 120rpx;
+  margin-top: 40rpx;
+  background-color: dodgerblue;
+  color: white;
+}
+.more{
+  margin-top: 30rpx;
+  background-color: white;
+  color: orange;
+  font-size: small;
+  font-weight: 200;
+}
+.card1 {
+  width: 340rpx; /* 卡片宽度 */
+  height: 260rpx; /* 卡片高度 */
+  background-color: #ffffff; /* 卡片背景色 */
+  border-radius: 10rpx; /* 圆角 */
+  box-shadow: -4rpx 0rpx 20rpx 8rpx rgba(0.1, 0.1, 0.1, 0.1); /* 阴影效果 */
+  margin-left: 5%;
+  margin-right: 2%;
+
+}
+.card2 {
+  width: 340rpx; /* 卡片宽度 */
+  height: 260rpx; /* 卡片高度 */
+  background-color: #ffffff; /* 卡片背景色 */
+  border-radius: 10rpx; /* 圆角 */
+  box-shadow: 4rpx 0rpx 20rpx 8rpx rgba(0.1, 0.1, 0.1, 0.1); /* 阴影效果 */
+  margin-right: 5%;
+  margin-left: 2%;
+
+}
+.card-container {
+  display: flex; /* 设置为弹性布局 */
+  justify-content: space-between; /* 水平空间分布 */
+}

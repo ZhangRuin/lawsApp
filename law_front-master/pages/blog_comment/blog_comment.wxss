@@ -1,0 +1,112 @@
+/* pages/blog_comment/blog_comment.wxss */
+page {
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+}
+.blog{
+  background-color: white;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 50rpx;
+  border-radius: 10px;
+}
+.head{
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.name{
+  margin-left: 30rpx;
+}
+.detail{
+  width: 680rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.content{
+  width: 650rpx;
+}
+.buttons{
+  display: flex;
+}
+.btn-share{
+  background-color: white;
+}
+.btn-comment{
+  background-color: white;
+}
+.btn-like{
+  background-color: white;
+}
+.share{
+  height: 50rpx;
+  width: 50rpx;
+}
+.comment{
+  height: 50rpx;
+  width: 50rpx;
+}
+.like{
+  height: 50rpx;
+  width: 50rpx;
+}
+.comments{
+  margin-left: 2%;
+  width: 96%;
+  background-color: white;
+}
+.divide{
+  background: gray;
+  width: 96%;
+  margin-left: 2%;
+  height: 1rpx;
+}
+.comment-card{
+  margin-left: 20rpx;
+  width: 680rpx;
+}
+.comment-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comment-avatar {
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.comment-name{
+  margin-left: 30rpx;
+}
+.like-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.likeComment{
+  background-color: white;
+  height: 100rpx;
+}
+.comment-like-pic{
+  margin-left: 0rpx;
+  width: 50rpx;
+  height: 50rpx;
+}

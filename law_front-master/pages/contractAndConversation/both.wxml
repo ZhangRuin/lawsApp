@@ -1,0 +1,11 @@
+<view class="enter" bind:tap="toContractWarn"style="margin-top:10%; display: flex; align-items: center;">
+    <image src="/pages/images/contract.png" style="height:35px; width:35px; margin-left: 20px;" mode="aspectFill"></image>
+    <view style="font-size:18px; font-weight:550; margin-left:53px; color: #18191a;">合同审查预警</view>
+    <image src="/pages/images/arrow.png" style="height:20px; width:20px; margin-left: 60px;" mode="aspectFill"></image>
+</view>
+
+<view class="enter" bind:tap="toVoice" style="margin-top:10%; display: flex; align-items: center;">
+    <image src="/pages/images/talk.png" style="height:37px; width:37px; margin-left: 20px;" mode="aspectFill"></image>
+    <view style="font-size:18px; font-weight:550; margin-left:50px; color: #18191a;">实时风险预警</view>
+    <image src="/pages/images/arrow.png" style="height:20px; width:20px; margin-left: 60px;" mode="aspectFill"></image>
+</view>

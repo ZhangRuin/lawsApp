@@ -1,0 +1,35 @@
+/* pages/postblog/postblog.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.box-post{
+  margin-left: 600rpx;
+}
+.post{
+  background-color: dodgerblue;
+  color: white;
+  margin-top: 10rpx;
+  width: 120rpx;
+  height: 70rpx;
+  text-align:start;
+  font-size: small;
+  font-weight: 500;
+  padding-top: 14rpx;
+  padding-left: 27rpx;
+  padding-right: 10rpx;
+}
+.box{
+  margin-top: 1%;
+  margin-left: 2%;
+  background-color: white;
+  width: 96%;
+  height: 90%;
+  border-radius: 10rpx;
+}
+.edit-area{
+  margin-left: 3%;
+  width: 90%;
+  height: 90%;
+}

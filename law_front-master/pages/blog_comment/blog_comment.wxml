@@ -1,0 +1,36 @@
+<!--pages/blog_comment/blog_comment.wxml-->
+<view class="blog">
+    <view class="head">
+      <image class="avatar" src="{{avatar}}"></image>
+      <text class="name">{{updater}}</text>
+    </view>
+    <view class="detail">
+      <text class="content">{{content}}</text>
+      <view wx:if="{{pictures != []}}" class="pics">
+        <view wx:for="{{pictures}}">
+          <image class="pic" src="{{item}}" mode="aspectFit"></image>
+        </view>
+      </view>
+    </view>
+    <view class="buttons">
+      <button class="btn-share" bindtap="onShareBlog"><image class="share" src="/pages/images/share.png"></image></button>
+      <button class="btn-comment" bindtap="onCheckComments"><image class="comment" src="/pages/images/comment.png"></image></button>
+      <button class="btn-like" bindtap="onLike"><image class="like" src="/pages/images/like1.png"></image></button>
+    </view>
+</view>
+<view class="comments" wx:for="{{comments}}">
+  <view class="divide"></view>
+  <view class="comment-card">
+    <view class="comment-head">
+      <view class="user-box">
+        <image class="comment-avatar" src="{{item.avatar}}"></image>
+        <text class="comment-name">{{item.user}}</text>
+      </view>
+      <view class="like-box">
+        <button class="likeComment" bindtap="onLikeComment" style="width: 50rpx;"><image class="comment-like-pic" src="/pages/images/like1.png"></image></button>
+        <text class="comment-like-num">{{item.likes}}</text>
+      </view>
+    </view>
+    <text class="comment-content">{{item.content}}</text>
+  </view>
+</view>

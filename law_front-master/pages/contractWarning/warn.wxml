@@ -1,0 +1,32 @@
+<!--pages/query/query.wxml-->
+<view class="scroll-list">
+  <block wx:for="{{chatList}}" wx:for-index="index" wx:for-item="item" wx:key="item">
+    <view class="{{login.id==item.msgId?'row-self':'row'}}">
+      <!-- 头像 -->
+      <view class="{{login.id==item.msgId?'head-self':'head-friend'}}">
+        <image class="{{login.id==item.msgId?'userAvatar':'aiAvatar'}}" mode="aspectFill" src="{{item.avatar}}"></image>
+      </view>
+      <!-- 发送内容 -->
+      <view>
+        <view wx:if="{{login.id!=item.msgId}}" class="nick">{{item.nickname}}</view>
+        <view wx:if="{{login.id!=item.msgId}}" class="message msg-friend">
+          <text user-select="true">{{item.message}}</text>
+        </view>
+        <view wx:else>
+            <image src="{{imagePaths[imgIndexArr[index]]}}" mode="aspectFit" bindtap="previewImage"></image>
+        </view>
+
+      </view>
+    </view>
+  </block>
+</view>
+
+<!-- 发送信息 -->
+<view class="footer">
+  <view class="humanService">
+    <button open-type="contact" bindcontact="handleContact" type="primary" style="position: absolute; top: 0; left: 0; width: 33px; height: 33px; opacity: 0; margin-top: 20rpx;"></button>
+    <image mode="aspectFill" style="height: 33px; width: 33px;" src="../images/humanService.png"></image>
+  </view>
+
+  <button class="btn" bindtap="uploadImg" style="margin-left:111rpx ; background-color:#3e7afe; color: white; font-weight:normal;">点击上传合同图片</button>
+</view>
