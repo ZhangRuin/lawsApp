@@ -1,0 +1,95 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://192.168.6.128:3307/laws?serverTimezone=Asia/Shanghai
+      username: root
+      password: 123456
+  jackson:
+    time-zone: GMT+8
+
+  jpa:
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 200MB
+
+#  redis:
+#    host: 172.29.4.107
+#    port: 6379
+#    password: 123456
+#    database: 0
+#    lettuce:
+#      pool:
+#        max-active: 8 #最大连接数
+#        max-idle: 8 #最大空闲连接
+#        min-idle: 0 #最小空闲连接
+#        max-wait: 100 #连接等待时间
+
+server:
+  port: 9000
+
+sa-token:
+  # token 名称（同时也是 cookie 名称）
+  token-name: satoken
+  # token 有效期（单位：秒） 默认30天，-1 代表永久有效
+  timeout: -1
+  # token 最低活跃频率（单位：秒），如果 token 超过此时间没有访问系统就会被冻结，默认-1 代表不限制，永不冻结
+  active-timeout: -1
+  # 是否允许同一账号多地同时登录 （为 true 时允许一起登录, 为 false 时新登录挤掉旧登录）
+  is-concurrent: true
+  # 在多人登录同一账号时，是否共用一个 token （为 true 时所有登录共用一个 token, 为 false 时每次登录新建一个 token）
+  is-share: true
+  # token 风格（默认可取值：uuid、simple-uuid、random-32、random-64、random-128、tik）
+  token-style: uuid
+  # 是否输出操作日志
+  is-log: true
+
+xfxh:
+  # 服务引擎使用 讯飞星火认知大模型V2.0，如果使用 V1.5 需要将 hostUrl 修改为 https://spark-api.xf-yun.com/v1.1/chat
+  hostUrl: https://spark-api.xf-yun.com/v3.1/chat
+  # 发送请求时指定的访问领域，如果是 V1.5版本 设置为 general，如果是 V2版本 设置为 generalv2
+  domain: generalv3
+  # 核采样阈值。用于决定结果随机性，取值越高随机性越强即相同的问题得到的不同答案的可能性越高。取值 [0,1]
+  temperature: 0.5
+  # 模型回答的tokens的最大长度，V1.5取值为[1,4096]，V2.0取值为[1,8192]。
+  maxTokens: 2048
+  # 大模型回复问题的最大响应时长，单位 s
+  maxResponseTime: 40
+  # 允许同时连接大模型的 websocket 数，如果是普通（免费）用户为 2，超过这个数连接响应会报错，具体参考官网。
+  QPS: 2
+  # 用于权限验证，从服务接口认证信息中获取
+  appId:
+    - 9fa7774d
+    - 3beb2fb3
+  # 用于权限验证，从服务接口认证信息中获取
+  apiKey:
+    - eb74ad551fdad24ea113f56c610061b8
+    - 772f1eafd1fdc779bd88e51acb7e1fd3
+  # 用于权限验证，从服务接口认证信息中获取
+  apiSecret:
+    - OTE4ODZkZjkwNWE3M2ZjN2FmMTdiYTNi
+    - MWY1NmE1YmUyNTI4ZTdmODZhMWI0MzQ3
+
+# 添加工作人员的密码
+add-staff-password: law666
+# 是否初始化数据
+enable-init-data: false
+file-service:
+  # 保存文件路径
+  profile: E:/test
+
+# 使用GPT4
+openai:
+  # 请求服务器地址
+  hostUrl: https://api.717.buzz/v1/chat/completions
+  # 用于权限验证，从服务接口认证信息中获取
+  apiKey: sk-Txav8LZFskAhQeshCf41EcDb769d4054Af0600CaD0328585
+  model: gpt-3.5-turbo
+  # gpt-3.5-turbo
